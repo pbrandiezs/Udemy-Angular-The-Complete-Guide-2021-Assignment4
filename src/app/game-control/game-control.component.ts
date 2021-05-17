@@ -17,17 +17,16 @@ export class GameControlComponent implements OnInit {
   intervalID: ReturnType<typeof setInterval>;
 
   onStartGame() {
-    console.log("start game!!");
+    // console.log("start game!!");
     this.theNumber = 0;
     this.intervalID = setInterval(() => {
       this.theNumber++;
-      // console.log(this.theNumber);
       this.gameEvent.emit(this.theNumber);
     }, 1000);
   }
 
   onStopGame() {
-    console.log("stop game!!");
+    // console.log("stop game!!");
     clearInterval(this.intervalID);
   }
 
