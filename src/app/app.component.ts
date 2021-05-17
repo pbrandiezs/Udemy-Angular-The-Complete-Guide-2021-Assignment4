@@ -9,7 +9,7 @@ export class AppComponent {
 
   theNumberFromGameControl: number;
 
-  displayTheNumber(x) {
+  getTheNumber(x) {
     this.theNumberFromGameControl = x;
   }
 }
