@@ -19,7 +19,7 @@
 <div>
   <app-game-control (gameEvent)='displayTheNumber($event)'></app-game-control>'
   <app-odd *ngIf="theNumberFromGameControl % 2" [x] = theNumberFromGameControl></app-odd>
-  <app-even></app-even>
+  <app-even *ngIf="!(theNumberFromGameControl % 2)" [x] = theNumberFromGameControl></app-even>
   <h3>The number is: {{theNumberFromGameControl}}</h3>
 
 

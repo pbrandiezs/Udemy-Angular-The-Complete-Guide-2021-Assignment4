@@ -14,9 +14,4 @@ export class OddComponent implements OnInit {
 
   @Input() x: number;
 
-  getTheNumber(x) {
-     console.log('The number in odd.component.ts is: ' + x);
-     return(x);
-  }
-
 }
