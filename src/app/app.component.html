@@ -18,7 +18,7 @@
 <hr>
 <div>
   <app-game-control (gameEvent)='displayTheNumber($event)'></app-game-control>'
-  <app-odd></app-odd>
+  <app-odd *ngIf="theNumberFromGameControl % 2" [x] = theNumberFromGameControl></app-odd>
   <app-even></app-even>
   <h3>The number is: {{theNumberFromGameControl}}</h3>
 
