@@ -17,7 +17,11 @@
 </div>
 <hr>
 <div>
-  <app-game-control></app-game-control>
+  <app-game-control (gameEvent)='displayTheNumber($event)'></app-game-control>'
   <app-odd></app-odd>
   <app-even></app-even>
+  <h3>The number is: {{theNumberFromGameControl}}</h3>
+
+
+
 </div>
