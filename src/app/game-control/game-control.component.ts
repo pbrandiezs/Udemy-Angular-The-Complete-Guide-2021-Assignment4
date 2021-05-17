@@ -12,4 +12,12 @@ export class GameControlComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  startGame() {
+    console.log("start game!!");
+  }
+
+  stopGame() {
+    console.log("stop game!!");
+  }
+
 }
